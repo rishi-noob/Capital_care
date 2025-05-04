@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Care Finance Company</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+    }
+    .home
+     {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .sidebar {
+        width: 250px;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+    .sidebar ul {
+        list-style-type: none;
+    }
+    .sidebar ul li {
+        margin-bottom: 15px;
+    }
+    .sidebar ul li a {
+        text-decoration: none;
+        color: #333;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .sidebar ul li a:hover, .sidebar ul li a.active {
+        background-color: #e0e0e0;
+    }
+    .sidebar ul li a i {
+        margin-right: 10px;
+        color: #007bff;
+    }
+    .main-content {
+        flex-grow: 1;
+        padding: 30px;
+    }
+    .content-section {
+        display: none;
+    }
+    .content-section.active {
+        display: block;
+    }
+    .features-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .features-list .feature {
+        display: flex;
+        align-items: center;
+        background-color: #e9ecef;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .apply-btn {
+        display: inline-block;
+        background-color: #dc3545;
+        color: white;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .apply-btn:hover {
+        background-color: #c82333;
+    }
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+        .sidebar {
+            width: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
+                        <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"/>
+                        <path d="M3 9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2"/>
+                        <path d="M3 9c0-3.5 2-6.5 4-6.5"/>
+                        <path d="M21 9c0-3.5-2-6.5-4-6.5"/>
+                    </svg> -->
+                   <a href="/index.html"><img src="/images/logo.png" alt="" style="height: 60px;"></a> 
+                   <a href="/index.html"><span>Capital Care Finance Company</span></a> 
+                </div>
+                <div class="nav-links">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#team" class="nav-link">Team</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+ <!-- Hero Section -->
+ <section id="home" class="hero">
+    <div class="container">
+        <div class="hero-content fade-in">
+            <h1>The Care of Your Financial Needs</h1>
+            <p>Your trusted partner in financial solutions, providing seamless services in loans and insurance.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary slide-up">Apply for a Loan</button>
+                <button class="btn btn-secondary slide-up">Get Insurance</button>
+            </div>
+        </div>
+    </div>
+</section>    
+<div class="home">
+    <div class="sidebar">
+        <ul>
+            <li><a href="#" class="active" data-section="features"><i class="icon">★</i> Features</a></li>
+            <li><a href="#" data-section="eligibility"><i class="icon">✔️</i> Eligibility</a></li>
+            <li><a href="#" data-section="documentation"><i class="icon">📄</i> Documentation</a></li>
+            <li><a href="#" data-section="rates"><i class="icon">💰</i> Rates & Fees</a></li>
+            <li><a href="#" data-section="faqs"><i class="icon">❓</i> FAQs</a></li>
+            <li><a href="#" data-section="quote"><i class="icon">📝</i> Get a Quote</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div id="features" class="content-section active">
+            <div class="about-section">
+                <h2>About Business Loan</h2>
+                <br>
+                <p>A business loan is a financial solution designed to support entrepreneurs and businesses in expanding operations, purchasing equipment, or managing working capital.</p>
+                <p>At Capital Care Finance Company, we offer customized business loan solutions with competitive rates, quick processing, and flexible repayment tenures.</p>
+            </div>
+            <br>
+            <!-- <br> -->
+            <div class="features-section">
+                <h3>Why Choose Enhancer Fincorp?</h3>
+                <br>
+                <div class="features-list">
+                    <div class="feature">Easy Documentation</div>
+                    <div class="feature">Quick Approval</div>
+                    <div class="feature">Higher Loan Amounts</div>
+                    <div class="feature">Flexible Repayment</div>
+                    <div class="feature">Flexible Tenor</div>
+                    <div class="feature">Attractive Interest Rates</div>
+                    <div class="feature">Transparent Process</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="eligibility" class="content-section">
+            <h2>Eligibility Criteria</h2>
+            <p>To qualify for a Project Finance at Capital Care Finance Company, you must meet the following criteria:</p>
+            <ul>
+                <li>The project should be viable and have a strong revenue model.</li>
+
+                <li> Sponsors should have a proven track record in project execution.</li>
+                <li>A detailed feasibility report, including financial projections, must be submitted.</li>
+                <li>Compliance with legal, regulatory, and environmental norms is required.</li>
+            </ul>
+        </div>
+
+        <div id="documentation" class="content-section">
+            <h2>Required Documentation</h2>
+            <h3>For Salaried Individuals:</h3>
+            <ul>
+                <li>Identity Proof (Aadhaar/PAN/Passport)</li>
+                <li>Address Proof</li>
+                <li>Last 3 months' salary slips</li>
+                <li>Bank statements for the last 6 months</li>
+                <li>Form 16 or Income Tax Returns</li>
+            </ul>
+            <h3>For Self-Employed:</h3>
+            <ul>
+                <li>Business registration documents</li>
+                <li>Income Tax Returns for last 2 years</li>
+                <li>Profit & Loss statements</li>
+                <li>Business bank statements</li>
+            </ul>
+        </div>
+
+        <div id="rates" class="content-section">
+            <h2>Rates & Fees</h2>
+            <table>
+                <tr>
+                    <th>Loan Amount</th>
+                    <th>Interest Rate</th>
+                    <th>Processing Fee</th>
+                </tr>
+                <tr>
+                    <td>Up to ₹30 Lakhs</td>
+                    <td>8.50% - 9.25%</td>
+                    <td>0.5% - 1%</td>
+                </tr>
+                <tr>
+                    <td>₹30 Lakhs - ₹75 Lakhs</td>
+                    <td>9.25% - 9.75%</td>
+                    <td>1% - 1.5%</td>
+                </tr>
+                <tr>
+                    <td>Above ₹75 Lakhs</td>
+                    <td>9.75% - 10.25%</td>
+                    <td>1.5% - 2%</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="faqs" class="content-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How long does the loan approval process take?</h3>
+                <p>Typically, our loan approval process takes 3-7 working days from document submission.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I prepay my home loan?</h3>
+                <p>Yes, you can prepay your home loan with minimal or no prepayment charges.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What is the maximum loan tenure?</h3>
+                <p>We offer home loans with a maximum tenure of 30 years.</p>
+            </div>
+        </div>
+        <br>
+        <button id="applyButton" style="
+        background-color: #4CAF50; 
+        color: white; 
+        padding: 15px 32px; 
+        border: none; 
+        border-radius: 4px; 
+        font-size: 16px; 
+        cursor: pointer; 
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+        transition: all 0.3s ease;">
+        Apply Now
+    </button>
+    
+<!-- get a quote -->
+        <div id="quote" class="content-section">
+            <h2>Get a Quote</h2>
+            <form>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <input type="tel" placeholder="Phone Number" required>
+                <input type="number" placeholder="Loan Amount" required>
+                <button type="submit" class="apply-btn">Request Quote</button>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- contact started -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="contact-wrapper fade-in">
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <span>+1 (555) 123-4567</span>
+                </div>
+                <div class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                    </svg>
+                    <span>support@capitalcare.com</span>
+                </div>
+                <div class="info-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                        <circle cx="12" cy="10" r="3"/>
+                    </svg>
+                    <span>123 Finance Street, New York, NY 10001</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 9h18v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9Z"/>
+                        <path d="M3 9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2"/>
+                        <path d="M3 9c0-3.5 2-6.5 4-6.5"/>
+                        <path d="M21 9c0-3.5-2-6.5-4-6.5"/>
+                    </svg>
+                    <span>Capital Care Finance Company</span>
+                </div>
+                <p>Your trusted partner in financial solutions.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Home Loan</a></li>
+                    <li><a href="#">Business Loan</a></li>
+                    <li><a href="#">Personal Loan</a></li>
+                    <li><a href="#">Insurance</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Capital Care Finance Company. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<!-- end footer -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const sidebarLinks = document.querySelectorAll('.sidebar ul li a');
+        const contentSections = document.querySelectorAll('.content-section');
+        
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Remove active class from all links and sections
+                sidebarLinks.forEach(l => l.classList.remove('active'));
+                contentSections.forEach(section => section.classList.remove('active'));
+                
+                // Add active class to clicked link
+                link.classList.add('active');
+                
+                // Show the corresponding content section
+                const section = link.getAttribute('data-section');
+                const activeSection = document.getElementById(section);
+                activeSection.classList.add('active');
+            });
+        });
+    });
+</script>
+
+<script src="/index.js"></script>
+
+</body>
+</html>
